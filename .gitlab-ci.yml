@@ -1,0 +1,6 @@
+image: node:8
+
+unit tests:
+  script:
+   - npm install
+   - npm run testd
