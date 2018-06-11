@@ -1,0 +1,19 @@
+{
+  "name": "firescript-test",
+  "version": "0.0.0",
+  "description": "Firescript syntax test cases",
+  "main": "test.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Andi Heinkelein <kippis@noname-media.com>",
+  "license": "MIT",
+  "dependencies": {
+    "inspect.js": "^1.11.7",
+    "lagoon-reporter": "^0.4.0",
+    "mocha": "^5.2.0"
+  }
+}
