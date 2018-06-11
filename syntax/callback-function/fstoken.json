@@ -8,10 +8,6 @@
     "value": "("
   },
   {
-    "type": "operator",
-    "value": "=>"
-  },
-  {
     "type": "punctuator",
     "value": "("
   },
@@ -22,6 +18,10 @@
   {
     "type": "punctuator",
     "value": ")"
+  },
+  {
+    "type": "operator",
+    "value": "=>"
   },
   {
     "type": "indention",
