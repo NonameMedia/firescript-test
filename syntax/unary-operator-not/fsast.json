@@ -1,0 +1,28 @@
+{
+  "type": "Program",
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "kind": "const",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "bla"
+          },
+          "init": {
+            "type": "UnaryExpression",
+            "operator": "!",
+            "argument": {
+              "type": "Identifier",
+              "name": "foo"
+            },
+            "prefix": true
+          }
+        }
+      ]
+    }
+  ]
+}

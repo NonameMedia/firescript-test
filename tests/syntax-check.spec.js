@@ -53,7 +53,9 @@ describe('Firescript Syntax Check', () => {
         })
 
         it(`transpile FS-AST into JS`, () => {
-          const transpiler = new JSTranspiler()
+          const transpiler = new JSTranspiler({
+            features: fsconf
+          })
           const res = transpiler.transpile(fsast)
 
           inspect(res).isString()
