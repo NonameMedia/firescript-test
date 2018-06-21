@@ -10,21 +10,17 @@
           "type": "VariableDeclarator",
           "id": {
             "type": "Identifier",
-            "name": "bla"
+            "name": "banana"
           },
           "init": {
-            "type": "LogicalExpression",
-            "operator": "||",
-            "left": {
-              "type": "Identifier",
-              "name": "foo"
-            },
-            "right": {
-              "type": "Identifier",
-              "name": "bar"
-            }
+            "type": "Literal",
+            "raw": "'Banana'",
+            "value": "Banana"
           },
-          "fsType": null
+          "fsType": {
+            "type": "FirescriptTypeBinding",
+            "name": "str"
+          }
         }
       ]
     }

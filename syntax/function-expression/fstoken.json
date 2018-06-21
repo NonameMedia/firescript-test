@@ -12,7 +12,7 @@
     "value": "="
   },
   {
-    "type": "identifier",
+    "type": "keyword",
     "value": "func"
   },
   {
@@ -22,22 +22,6 @@
   {
     "type": "punctuator",
     "value": "("
-  },
-  {
-    "type": "identifier",
-    "value": "foo"
-  },
-  {
-    "type": "operator",
-    "value": "="
-  },
-  {
-    "type": "punctuator",
-    "value": "{"
-  },
-  {
-    "type": "punctuator",
-    "value": "}"
   },
   {
     "type": "punctuator",

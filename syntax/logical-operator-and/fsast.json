@@ -23,7 +23,8 @@
               "type": "Identifier",
               "name": "bar"
             }
-          }
+          },
+          "fsType": null
         }
       ]
     }

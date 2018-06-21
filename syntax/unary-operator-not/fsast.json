@@ -20,7 +20,8 @@
               "name": "foo"
             },
             "prefix": true
-          }
+          },
+          "fsType": null
         }
       ]
     }

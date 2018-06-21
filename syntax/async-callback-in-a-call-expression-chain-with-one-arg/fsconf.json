@@ -1,4 +1,4 @@
 {
   "esModules": true,
-  "esDefaultParameter": true
+  "esDefaultParams": true
 }
