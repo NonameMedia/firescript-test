@@ -47,7 +47,10 @@
             "expression": false,
             "generator": false
           },
-          "fsType": null
+          "fsTyping": {
+            "type": "FirescriptTyping",
+            "name": "any"
+          }
         }
       ]
     }

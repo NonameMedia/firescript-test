@@ -14,9 +14,9 @@
           "name": "amount"
         }
       ],
-      "fsParamTypeBindings": [
+      "fsParamTypings": [
         {
-          "type": "Identifier",
+          "type": "FirescriptTyping",
           "name": "num"
         }
       ],

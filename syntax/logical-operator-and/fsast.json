@@ -24,7 +24,10 @@
               "name": "bar"
             }
           },
-          "fsType": null
+          "fsTyping": {
+            "type": "FirescriptTyping",
+            "name": "any"
+          }
         }
       ]
     }

@@ -31,6 +31,12 @@
                 }
               }
             ],
+            "fsParamTypings": [
+              {
+                "type": "FirescriptTyping",
+                "name": "any"
+              }
+            ],
             "body": {
               "type": "BlockStatement",
               "body": [
@@ -47,7 +53,10 @@
             "expression": false,
             "generator": false
           },
-          "fsType": null
+          "fsTyping": {
+            "type": "FirescriptTyping",
+            "name": "any"
+          }
         }
       ]
     }
