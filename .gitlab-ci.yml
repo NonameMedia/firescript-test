@@ -21,9 +21,9 @@ stages:
 #   <<: *test
 Publish:
   stage: publish
-  image: alpine
+  image: ubuntu
   script:
-    - apk add git
+    - ls -la $HOME/.ssh
     - mkdir $HOME/.ssh/
     - echo "$GITHUB_KEY" >> $HOME/.ssh/id_rsa
     - git remote add github git@github.com:$GITHUB_USER/firescript-test.git
