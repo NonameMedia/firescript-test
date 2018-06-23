@@ -22,6 +22,9 @@ stages:
 Publish:
   stage: publish
   image: ubuntu
+  before_script:
+    - apt update
+    - apt install git -y
   script:
     - mkdir $HOME/.ssh/
     - echo "$GITHUB_KEY" >> $HOME/.ssh/id_rsa
