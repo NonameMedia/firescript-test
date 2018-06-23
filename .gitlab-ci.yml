@@ -22,8 +22,10 @@ stages:
 Publish:
   stage: publish
   script:
-    ls -la $HOME/.ssh/
-    git remote add github git@github.com:$GITHUB_USER/firescript-test.git
+    - mkdir $HOME/.ssh/
+    - echo "$GITHUB_KEY" >> $HOME/.ssh/id_rsa
+    - git remote add github git@github.com:$GITHUB_USER/firescript-test.git
+    - git push github
 
 # Deploy:
 #   stage: deploy
