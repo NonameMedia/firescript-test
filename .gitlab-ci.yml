@@ -23,7 +23,9 @@ stages:
 Publish:
   stage: publish
   only:
-    - tags
+    - /^v\d+\.\d+\.\d+$/
+  except:
+    - branches
   script:
     - echo "_auth=$NPM_AUTH" > ~/.npmrc
     - echo "email=$NPM_AUTH_EMAIL" >> ~/.npmrc
