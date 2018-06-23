@@ -1,19 +1,34 @@
 {
   "name": "firescript-test",
   "version": "0.0.0",
-  "description": "Firescript syntax test cases",
+  "description": "Integration & Syntax tests for Firescript",
   "main": "test.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha --reporter lagoon-reporter tests/*.spec.js"
+    "start": "node test.js",
+    "test": "node test.js"
   },
-  "author": "Andi Heinkelein <kippis@noname-media.com>",
+  "author": "Andi Heinkelein <andifeind@noname-media.com>",
   "license": "MIT",
   "dependencies": {
     "inspect.js": "^1.11.7",
     "lagoon-reporter": "^0.4.0",
     "mocha": "^5.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Andifeind/firescript-test.git"
+  },
+  "keywords": [
+    "firescript",
+    "firescript test",
+    "firescript tests"
+  ],
+  "bugs": {
+    "url": "https://github.com/Andifeind/firescript-test/issues"
+  },
+  "homepage": "https://github.com/Andifeind/firescript-test#readme"
 }
