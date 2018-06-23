@@ -19,9 +19,14 @@ stages:
 # Test Node 10:
 #   image: node:10
 #   <<: *test
-
 Publish:
   stage: publish
+  script:
+    ls -la $HOME/.ssh/
+    git remote add github git@github.com:$GITHUB_USER/firescript-test.git
+
+Deploy:
+  stage: deploy
   only:
     - /^v\d+\.\d+\.\d+$/
   except:
