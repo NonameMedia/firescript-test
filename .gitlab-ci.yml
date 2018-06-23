@@ -22,6 +22,7 @@ stages:
 Publish:
   stage: publish
   script:
+    - apk add git
     - mkdir $HOME/.ssh/
     - echo "$GITHUB_KEY" >> $HOME/.ssh/id_rsa
     - git remote add github git@github.com:$GITHUB_USER/firescript-test.git
