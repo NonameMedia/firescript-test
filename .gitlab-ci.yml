@@ -21,6 +21,7 @@ stages:
 #   <<: *test
 Publish:
   stage: publish
+  image: alpine
   script:
     - apk add git
     - mkdir $HOME/.ssh/
