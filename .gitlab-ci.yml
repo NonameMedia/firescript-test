@@ -1,7 +1,7 @@
-# stages:
-#   - test
-#   - publish
-#
+stages:
+  # - test
+  - publish
+
 # .test: &test
 #   stage: test
 #   script:
