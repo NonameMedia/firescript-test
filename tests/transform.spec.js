@@ -6,7 +6,7 @@ const {
   FireScriptTranspiler,
   FireScriptTokenizer,
   JSTranspiler
-} = require(process.env.FIRESCRIPT_BIN || 'firescript')
+} = require(process.env.FIRESCRIPT_MODULE || 'firescript')
 
 describe('Firescript Transform', () => {
   /**
