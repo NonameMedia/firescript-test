@@ -2,9 +2,9 @@ const path = require('path')
 const inspect = require('inspect.js')
 
 const {
-  FireScriptParser,
-  FireScriptTranspiler,
-  FireScriptTokenizer,
+  FirescriptParser,
+  FirescriptTranspiler,
+  FirescriptTokenizer,
   JSTranspiler
 } = require(process.env.FIRESCRIPT_MODULE || 'firescript')
 
@@ -37,7 +37,7 @@ describe('Firescript Syntax Check', () => {
         const jsresult = inspect.readFile(`${testCase.path}/result.js`)
 
         it(`tokenize .fire script`, () => {
-          const tokenizer = new FireScriptTokenizer()
+          const tokenizer = new FirescriptTokenizer()
           const res = tokenizer.tokenize(fssource)
 
           inspect(res).isArray()
@@ -45,7 +45,7 @@ describe('Firescript Syntax Check', () => {
         })
 
         it(`parse .fire script into FS-AST`, () => {
-          const parser = new FireScriptParser()
+          const parser = new FirescriptParser()
           const res = parser.parse(fssource)
 
           inspect(res).isObject()
