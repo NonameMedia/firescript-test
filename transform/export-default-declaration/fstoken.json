@@ -10,5 +10,9 @@
   {
     "type": "identifier",
     "value": "banana"
+  },
+  {
+    "type": "indention",
+    "value": 0
   }
 ]
