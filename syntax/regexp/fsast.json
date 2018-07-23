@@ -15,7 +15,11 @@
           "init": {
             "type": "Literal",
             "raw": "/banana/",
-            "value": "/banana/"
+            "value": "/banana/",
+            "regex": {
+              "pattern": "banana",
+              "flags": ""
+            }
           },
           "fsTyping": {
             "type": "FirescriptTyping",
