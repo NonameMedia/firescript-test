@@ -42,7 +42,8 @@
                 "generator": false
               },
               "kind": "constructor",
-              "static": false
+              "static": false,
+              "async": false
             }
           ]
         },

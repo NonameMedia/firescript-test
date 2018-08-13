@@ -41,7 +41,8 @@
               "generator": false
             },
             "kind": "method",
-            "static": true
+            "static": true,
+            "async": false
           }
         ]
       },
