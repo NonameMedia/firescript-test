@@ -1,0 +1,57 @@
+{
+  "type": "Program",
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo"
+      },
+      "params": [],
+      "fsParamTypings": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "BlockStatement",
+            "body": [],
+            "leadingComments": [
+              {
+                "type": "Line",
+                "value": " Returns foo"
+              }
+            ]
+          },
+          {
+            "type": "BlockStatement",
+            "body": [],
+            "leadingComments": [
+              {
+                "type": "Line",
+                "value": " End of comment"
+              }
+            ]
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Literal",
+              "raw": "'foo'",
+              "value": "foo"
+            }
+          }
+        ]
+      },
+      "async": false,
+      "expression": false,
+      "generator": false,
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " A function"
+        }
+      ]
+    }
+  ]
+}
