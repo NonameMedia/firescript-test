@@ -12,34 +12,15 @@
       "fsParamTypings": [],
       "body": {
         "type": "BlockStatement",
-        "body": [
+        "body": [],
+        "leadingComments": [
           {
-            "type": "BlockStatement",
-            "body": [],
-            "leadingComments": [
-              {
-                "type": "Line",
-                "value": " Returns foo"
-              }
-            ]
+            "type": "Line",
+            "value": " Returns foo"
           },
           {
-            "type": "BlockStatement",
-            "body": [],
-            "leadingComments": [
-              {
-                "type": "Line",
-                "value": " End of comment"
-              }
-            ]
-          },
-          {
-            "type": "ReturnStatement",
-            "argument": {
-              "type": "Literal",
-              "raw": "'foo'",
-              "value": "foo"
-            }
+            "type": "Line",
+            "value": " End of comment"
           }
         ]
       },
@@ -52,6 +33,14 @@
           "value": " A function"
         }
       ]
+    },
+    {
+      "type": "ReturnStatement",
+      "argument": {
+        "type": "Literal",
+        "raw": "'foo'",
+        "value": "foo"
+      }
     }
   ]
 }

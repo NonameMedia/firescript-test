@@ -1,8 +1,5 @@
 // A function
-function foo () {
-  // Returns foo
+function foo () // Returns foo
+// End of comment
 {}
-  // End of comment
-{}
-  return 'foo';
-}
+return 'foo';
