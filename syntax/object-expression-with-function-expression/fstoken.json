@@ -1,0 +1,54 @@
+[
+  {
+    "type": "keyword",
+    "value": "const"
+  },
+  {
+    "type": "identifier",
+    "value": "foo"
+  },
+  {
+    "type": "operator",
+    "value": "="
+  },
+  {
+    "type": "indention",
+    "value": 2
+  },
+  {
+    "type": "identifier",
+    "value": "bar"
+  },
+  {
+    "type": "punctuator",
+    "value": ":"
+  },
+  {
+    "type": "identifier",
+    "value": "func"
+  },
+  {
+    "type": "identifier",
+    "value": "Foo"
+  },
+  {
+    "type": "punctuator",
+    "value": "("
+  },
+  {
+    "type": "punctuator",
+    "value": ")"
+  },
+  {
+    "type": "indention",
+    "value": 4
+  },
+  {
+    "type": "keyword",
+    "value": "return"
+  },
+  {
+    "type": "literal",
+    "value": "'foo'"
+  }
+]
