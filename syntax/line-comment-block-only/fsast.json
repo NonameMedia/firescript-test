@@ -10,25 +10,18 @@
             "params": [],
             "body": {
                 "type": "BlockStatement",
-                "body": [
+                "innerComments": [
                     {
-                        "type": "ReturnStatement",
-                        "argument": {
-                            "type": "Literal",
-                            "value": "foo",
-                            "raw": "'foo'"
-                        },
-                        "leadingComments": [
-                            {
-                                "type": "Line",
-                                "value": " Returns foo"
-                            },
-                            {
-                                "type": "Line",
-                                "value": " End of comment"
-                            }
-                        ]
+                        "type": "Line",
+                        "value": " Returns foo"
+                    },
+                    {
+                        "type": "Line",
+                        "value": " End of comment"
                     }
+                ],
+                "body": [
+
                 ]
             },
             "generator": false,
@@ -39,6 +32,12 @@
                 {
                     "type": "Line",
                     "value": " A function"
+                }
+            ],
+            "trailingComments": [
+                {
+                    "type": "Line",
+                    "value": " End of function"
                 }
             ]
         }

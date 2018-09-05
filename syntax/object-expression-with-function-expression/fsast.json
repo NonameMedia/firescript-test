@@ -22,21 +22,6 @@
                   "name": "bar"
                 },
                 "value": {
-                  "type": "Identifier",
-                  "name": "func"
-                },
-                "shorthand": false,
-                "computed": false,
-                "kind": "init",
-                "method": false
-              },
-              {
-                "type": "Property",
-                "key": {
-                  "type": "Identifier",
-                  "name": "Foo"
-                },
-                "value": {
                   "type": "FunctionExpression",
                   "id": null,
                   "params": [],
@@ -61,7 +46,7 @@
                 "shorthand": false,
                 "computed": false,
                 "kind": "init",
-                "method": true
+                "method": false
               }
             ]
           },

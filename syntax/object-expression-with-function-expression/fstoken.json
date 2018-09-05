@@ -24,12 +24,8 @@
     "value": ":"
   },
   {
-    "type": "identifier",
+    "type": "keyword",
     "value": "func"
-  },
-  {
-    "type": "identifier",
-    "value": "Foo"
   },
   {
     "type": "punctuator",
@@ -50,5 +46,9 @@
   {
     "type": "literal",
     "value": "'foo'"
+  },
+  {
+    "type": "indention",
+    "value": 0
   }
 ]

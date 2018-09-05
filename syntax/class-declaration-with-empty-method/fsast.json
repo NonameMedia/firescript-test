@@ -71,7 +71,10 @@
               "id": null,
               "params": [],
               "fsParamTypings": [],
-              "body": null,
+              "body": {
+                "type": "BlockStatement",
+                "body": []
+              },
               "async": false,
               "expression": false,
               "generator": false
