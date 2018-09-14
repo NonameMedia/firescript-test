@@ -1,6 +1,4 @@
-module.exports = {
-  banana: banana,
-  peach: peach,
-  coconut: c
-};
+module.exports.banana = banana;
+module.exports.peach = peach;
+module.exports.coconut = c;
 module.exports.__esModule = true;
