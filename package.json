@@ -10,12 +10,18 @@
     "start": "node test.js",
     "test": "node test.js"
   },
+  "bin": {
+    "firetest": "./bin/firetest"
+  },
   "author": "Andi Heinkelein <andifeind@noname-media.com>",
   "license": "MIT",
   "dependencies": {
+    "args": "^5.0.0",
+    "colorfy": "^2.0.4",
     "inspect.js": "^1.11.7",
     "lagoon-reporter": "^0.4.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "superfs": "^0.12.2"
   },
   "devDependencies": {},
   "repository": {
