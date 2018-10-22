@@ -1,25 +1,26 @@
 image: node:8
 stages:
-  # - test
+  - test
   - deploy
 
-# .test: &test
-#   stage: test
-#   script:
-#    - npm install
-#    - npm run test
-#
-# Test Node 8:
-#   image: node:8
-#   <<: *test
-#
-# Test Node 9:
-#   image: node:9
-#   <<: *test
-#
-# Test Node 10:
-#   image: node:10
-#   <<: *test
+.test: &test
+  stage: test
+  script:
+   - npm install
+   - npm run test
+
+Test Node 8:
+  image: node:8
+  <<: *test
+
+Test Node 9:
+  image: node:9
+  <<: *test
+
+Test Node 10:
+  image: node:10
+  <<: *test
+
 # Publish:
 #   stage: publish
 #   image: ubuntu
@@ -39,7 +40,5 @@ Deploy:
   except:
     - branches
   script:
-    - echo "_auth=$NPM_AUTH" > ~/.npmrc
-    - echo "email=$NPM_AUTH_EMAIL" >> ~/.npmrc
     - echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" >> ~/.npmrc
     - npm publish
