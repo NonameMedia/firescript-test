@@ -1,0 +1,6 @@
+import * as inspect from 'inspect.js'
+describe('FireTest', () =>
+  it ('loads tests from a .fire file', () =>
+    inspect('foo').isString()
+  )
+)

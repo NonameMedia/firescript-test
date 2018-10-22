@@ -1,10 +1,10 @@
 const Mocha = require('mocha')
 const inspect = require('inspect.js')
-const firescript = require('../src/app')
+const firescript = require('firescript')
 const superfs = require('superfs')
 const EventEmitter = require('events')
 
-require('../src/register')
+require('firescript/register')
 
 class FireTest extends EventEmitter {
   constructor (opts) {
