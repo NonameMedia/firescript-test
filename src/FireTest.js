@@ -3,6 +3,7 @@ const inspect = require('inspect.js')
 const firescript = require('firescript')
 const superfs = require('superfs')
 const EventEmitter = require('events')
+const lagoonReporter = require('lagoon-reporter')
 
 require('firescript/register')
 
@@ -10,7 +11,7 @@ class FireTest extends EventEmitter {
   constructor (opts) {
     super()
     this.mocha = new Mocha()
-    this.mocha.reporter('lagoon-reporter')
+    this.mocha.reporter(lagoonReporter)
     this.mocha.useInlineDiffs(true)
     this.mocha.suite.timeout(2000)
     this.filePatterns = opts.files || ['tests/**/*.spec.fire', 'tests/**/*.spec.js']
