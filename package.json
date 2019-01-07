@@ -1,6 +1,6 @@
 {
   "name": "firescript-test",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Integration & Syntax tests for Firescript",
   "main": "test.js",
   "directories": {
@@ -18,7 +18,11 @@
   "dependencies": {
     "args": "^5.0.0",
     "colorfy": "^2.0.4",
+<<<<<<< HEAD
     "firescript": ">=0.7.0 <1.0.0",
+=======
+    "firescript": "0.x.x",
+>>>>>>> 9b9f74b24fce0ec2d244c8b2260628ee67af447e
     "inspect.js": "^1.11.7",
     "lagoon-reporter": "^0.4.0",
     "mocha": "^5.2.0",
