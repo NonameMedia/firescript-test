@@ -16,12 +16,12 @@
   "author": "Andi Heinkelein <andifeind@noname-media.com>",
   "license": "MIT",
   "dependencies": {
-    "args": "^5.0.0",
-    "colorfy": "^2.0.4",
+    "args": "^5.0.1",
+    "colorfy": "^2.1.0",
     "firescript": ">=0.8.2 <1.0.0",
-    "inspect.js": "^1.11.7",
-    "lagoon-reporter": "^0.4.0",
-    "mocha": "^5.2.0",
+    "inspect.js": "^1.11.8",
+    "lagoon-reporter": "^0.7.0",
+    "mocha": "^6.0.2",
     "superfs": "^0.12.2"
   },
   "devDependencies": {},
