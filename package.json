@@ -18,10 +18,10 @@
   "dependencies": {
     "args": "^5.0.1",
     "colorfy": "^2.1.0",
-    "firescript": ">=0.8.2 <1.0.0",
+    "firescript": "^0.8.5",
     "inspect.js": "^1.11.8",
-    "lagoon-reporter": "^0.7.0",
-    "mocha": "^6.0.2",
+    "lagoon-reporter": "^0.7.2",
+    "mocha": "^6.1.4",
     "superfs": "^0.12.2"
   },
   "devDependencies": {},
