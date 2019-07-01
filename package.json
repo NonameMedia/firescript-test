@@ -1,6 +1,6 @@
 {
   "name": "firescript-test",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Integration & Syntax tests for Firescript",
   "main": "test.js",
   "directories": {
