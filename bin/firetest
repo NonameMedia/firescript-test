@@ -1,42 +1,52 @@
 #!/usr/bin/env node
 
+const supercmd = require('supercmd')
 const FireTest = require('../src/FireTest').FireTest
-const args = require('args')
 const colorfy = require('colorfy')
 
-args
-  .option('bail', 'Cancel tests on first error')
-  .option('verbose', 'Enable verbose log')
+console.log('MY FSTEST')
+supercmd
+  .cmd('* [files]')
+  .description('Run all tests')
+  .option('-b, --bail', 'Cancel tests on first error')
+  .action((ctx, files) => {
+    console.log('ARGS', files)
+    const fireTest = new FireTest({
+      bail: ctx.bail,
+      files: files
+    })
 
-const flags = args.parse(process.argv)
-if (args.sub.length) {
-  flags.files = args.sub
-}
+    const cf = colorfy()
 
-const fireTest = new FireTest(flags)
-const cf = colorfy()
+    fireTest.on('runner:start', () => {
+      cf.lime('Start firetest runner').print()
+    })
 
-cf.lime('Start firetest runner').print()
+    fireTest.on('runner:init', () => {
+      cf.azure(fireTest.files.length).grey(' files loaded').print()
+    })
 
-fireTest.on('runner:init', () => {
-  cf.azure(fireTest.files.length).grey(' files loaded').print()
-})
+    fireTest.on('runner:success', () => {
+      cf.green('Done').print()
+    })
 
-fireTest.on('runner:success', () => {
-  cf.green('Done').print()
-})
+    fireTest.on('runner:fail', () => {
+      cf.green('Failed').print()
+    })
 
-fireTest.on('runner:fail', () => {
-  cf.green('Failed').print()
-})
+    return fireTest.run().then(() => {
 
-fireTest.run().then(() => {
+    }).catch((err) => {
+      cf.red('Failed with error:').grey(err.message).print()
+      if (flags.stack) {
+        cf.ddgrey(err.stack).print()
+      }
 
-}).catch((err) => {
-  cf.red('Failed with error:').grey(err.message).print()
-  if (flags.stack) {
-    cf.ddgrey(err.stack).print()
-  }
+      process.exit(1)
+    })
+  })
 
-  process.exit(1)
-})
+// const args = process.argv.splice(2)
+// args.unshift('test')
+console.log('ARGS', process.argv, supercmd.parseArgv(process.argv))
+supercmd.parse(process.argv)

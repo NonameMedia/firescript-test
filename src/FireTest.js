@@ -11,7 +11,7 @@ class FireTest extends EventEmitter {
   constructor (opts) {
     super()
     this.mocha = new Mocha()
-    this.mocha.reporter(lagoonReporter)
+    this.mocha.reporter('lagoon-reporter')
     this.mocha.useInlineDiffs(true)
     this.mocha.suite.timeout(2000)
     this.filePatterns = opts.files || ['tests/**/*.spec.fire', 'tests/**/*.spec.js']
@@ -78,7 +78,9 @@ class FireTest extends EventEmitter {
     }
 
     this.mocha.files = this.files
+    this.emit('runner:start')
     const runner = this.mocha.run()
+
     runner.on('end', () => {
       this.emit('runner:end')
       if (runner.failures === 0) {
