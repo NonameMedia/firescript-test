@@ -4,13 +4,11 @@ const supercmd = require('supercmd')
 const FireTest = require('../src/FireTest').FireTest
 const colorfy = require('colorfy')
 
-console.log('MY FSTEST')
 supercmd
   .cmd('* [files]')
   .description('Run all tests')
   .option('-b, --bail', 'Cancel tests on first error')
   .action((ctx, files) => {
-    console.log('ARGS', files)
     const fireTest = new FireTest({
       bail: ctx.bail,
       files: files
