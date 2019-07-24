@@ -29,7 +29,8 @@ supercmd
     })
 
     fireTest.on('runner:fail', () => {
-      cf.green('Failed').print()
+      cf.red('Failed').print()
+      process.exit(1)
     })
 
     return fireTest.run().then(() => {
@@ -46,5 +47,4 @@ supercmd
 
 // const args = process.argv.splice(2)
 // args.unshift('test')
-console.log('ARGS', process.argv, supercmd.parseArgv(process.argv))
 supercmd.parse(process.argv)
