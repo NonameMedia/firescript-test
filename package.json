@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "colorfy": "^2.1.0",
-    "firescript": "^0.9.10",
+    "firescript": "^0.9.14",
     "inspect.js": "^1.11.8",
     "lagoon-reporter": "^0.7.5",
     "mocha": "^6.2.0",
