@@ -8,9 +8,11 @@ supercmd
   .cmd('* [files]')
   .description('Run all tests')
   .option('-b, --bail', 'Cancel tests on first error')
+  .option('-g, --grep=<str>', 'Greps for specific tests')
   .action((ctx, files) => {
     const fireTest = new FireTest({
       bail: ctx.bail,
+      grep: ctx.grep,
       files: files
     })
 
