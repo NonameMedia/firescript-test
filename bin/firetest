@@ -8,11 +8,13 @@ supercmd
   .cmd('* [files]')
   .description('Run all tests')
   .option('-b, --bail', 'Cancel tests on first error')
-  .option('-g, --grep=<str>', 'Greps for specific tests')
+  .option('-g, --grep <str>', 'Grep for tests')
+  .option('-f, --fgrep <str>', 'Grep for tests by filename')
   .action((ctx, files) => {
     const fireTest = new FireTest({
       bail: ctx.bail,
       grep: ctx.grep,
+      fgrep: ctx.fgrep,
       files: files
     })
 
@@ -50,3 +52,13 @@ supercmd
 // const args = process.argv.splice(2)
 // args.unshift('test')
 supercmd.parse(process.argv)
+
+process.on('unhandledRejection', (err) => {
+  console.log(err)
+  process.exit(1)
+});
+
+process.on('uncaughtException', (err) => {
+  console.log(err)
+  process.exit(1)
+});

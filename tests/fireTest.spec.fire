@@ -3,4 +3,8 @@ describe('FireTest', () =>
   it ('loads tests from a .fire file', () =>
     inspect('foo').isString()
   )
+
+  it ('str is equal', () =>
+    inspect('foo').isEql('foo')
+  )
 )
