@@ -17,10 +17,10 @@
   "license": "MIT",
   "dependencies": {
     "colorfy": "^2.1.1",
-    "firescript": "^0.12.1",
+    "firescript": "^0.21.2",
     "inspect.js": "^1.12.0",
     "lagoon-reporter": "^0.7.5",
-    "mocha": "^7.2.0",
+    "mocha": "^10.2.0",
     "supercmd": "^0.2.5",
     "superfs": "^0.12.2"
   },
